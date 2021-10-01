@@ -1,0 +1,23 @@
+.cartButton {
+  margin: 1rem;
+  padding: 0.7rem;
+  position: relative;
+  background: inherit;
+  border: none;
+
+  & > span {
+    position: absolute;
+    color: var(--gray-850);
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid var(--gray-900);
+    clip-path: circle();
+    background: var(--cyan-500);
+    border-radius: 50%;
+  }
+}
