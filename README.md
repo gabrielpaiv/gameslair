@@ -36,6 +36,8 @@
 - React
 - Next.js
 - Sass
+- React Toastify
+- Json-server
 
 &nbsp;
 
@@ -53,6 +55,9 @@ $ cd gameslair
 
 # Instale as dependências
 $ yarn
+
+# Inicie o servidor
+$ yarn server
 
 # Inicie a aplicação
 $ yarn dev
