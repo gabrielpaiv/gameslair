@@ -2,14 +2,14 @@ import { FaShoppingCart } from 'react-icons/fa'
 import styles from './styles.module.scss'
 
 interface CartButtonProps {
-  cartItens: number
+  cartitems: number
 }
 
-export function CartButton({ cartItens }: CartButtonProps) {
+export function CartButton({ cartitems }: CartButtonProps) {
   return (
     <button className={styles.cartButton}>
       <FaShoppingCart size="2.5rem" color="var(--cyan-500)" />
-      {cartItens > 0 ? <span>{cartItens}</span> : ''}
+      {cartitems > 0 ? <span>{cartitems}</span> : ''}
     </button>
   )
 }

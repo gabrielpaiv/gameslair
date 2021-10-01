@@ -1,9 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
+import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { CartButton } from '../CartButton'
 import styles from './styles.module.scss'
 
 export function Header() {
+  const { asPath } = useRouter()
+
+  const isOnCart = asPath === '/cart' ? true : false
+
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
@@ -13,7 +18,7 @@ export function Header() {
             <span>GamesLair</span>
           </a>
         </Link>
-        <CartButton cartItens={0} />
+        {!isOnCart && <CartButton cartitems={0} />}
       </div>
     </header>
   )
