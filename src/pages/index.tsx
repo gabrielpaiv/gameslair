@@ -1,9 +1,13 @@
-import styles from '../styles/Home.module.css'
-
+import Head from 'next/head'
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Head>
+        <title>GamesLair | Seu covil de jogos</title>
+      </Head>
+      <div>
+        <h1>Hello World</h1>
+      </div>
+    </>
   )
 }
