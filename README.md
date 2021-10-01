@@ -1,34 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GamesLair 🐉
 
-## Getting Started
+&nbsp;
 
-First, run the development server:
+## 🏆 Informações sobre o desafio
 
-```bash
-npm run dev
-# or
-yarn dev
+- O desafio consiste em construir a interface de um ecommerce de games utilizando ReactJs ou React Native.
+
+&nbsp;
+
+## 🏁 Objetivos
+
+- [ ] Os produtos devem ser renderizados dinamicamente através do products.json e das imagens estipuladas.
+- [ ] Os valores exibidos no checkout (frete, subtotal e total) devem ser calculados dinamicamente.
+- [ ] O usuário poderá adicionar e remover produtos do carrinho
+- [ ] O usuário poderá ordenar os produtos por preço, popularidade (score) e ordem alfabética.
+- [ ] A cada produto adicionado, deve-se somar R$ 10,00 ao frete.
+- [ ] O frete é grátis para compras acima de R$ 250,00.
+
+&nbsp;
+
+## 💻 O que sera avaliado no projeto?
+
+- Cumprimento dos requisitos
+- Qualidade do layout e fluidez da UX
+- Organização do código e boas práticas
+- Domínio das linguagens, bibliotecas e ferramentas utilizadas
+- Organização dos commits
+- Escrita e cobertura de testes
+- Gerenciamento de estado
+
+&nbsp;
+
+## 🛠️ Tecnologias/Ferramentas ultilizadas
+
+- React
+- Next.js
+- Sass
+
+&nbsp;
+
+## ⚙️ Instalação
+
+```
+# Supondo que seu terminal seja Unix
+# Abra um terminal e copie este repositório com o comando
+$ git clone https://github.com/gabrielpaiv/gameslair.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
+# Acesse a pasta da aplicação
+$ cd gameslair
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Instale as dependências
+$ yarn
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Inicie a aplicação
+$ yarn dev
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
 
-## Learn More
+&nbsp;
 
-To learn more about Next.js, take a look at the following resources:
+## ⏳ Prazos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- O prazo máximo de entrega do projeto é para o dia 06/1/2021 às 23:59.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center">Feito com 🦆 por Gabriel Paiva</p>
