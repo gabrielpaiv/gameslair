@@ -1,4 +1,10 @@
-import { createContext, ReactNode, useContext, useState } from 'react'
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState
+} from 'react'
 import { api } from '../services/api'
 import { Game } from '../types/game'
 import { toast } from 'react-toastify'
@@ -22,14 +28,16 @@ type CartContextData = {
 const CartContext = createContext<CartContextData>({} as CartContextData)
 
 export function CartProvider({ children }: CartProviderProps) {
-  const [cart, setCart] = useState<Game[]>(() => {
+  const [cart, setCart] = useState<Game[]>([])
+
+  useEffect(() => {
     const storagedCart = localStorage.getItem('@GamesLair:cart')
 
     if (storagedCart) {
-      return JSON.parse(storagedCart)
+      setCart(JSON.parse(storagedCart))
     }
-    return []
-  })
+    setCart([])
+  }, [])
 
   async function addProduct(productId: number) {
     try {
