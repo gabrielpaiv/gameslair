@@ -20,6 +20,7 @@ type UpdateProductAmount = {
 
 type CartContextData = {
   cart: Game[]
+  totalCartItems: number
   addProduct: (productId: number) => Promise<void>
   removeProduct: (productId: number) => void
   updateProductAmount: ({ productId, amount }: UpdateProductAmount) => void
@@ -30,14 +31,25 @@ const CartContext = createContext<CartContextData>({} as CartContextData)
 export function CartProvider({ children }: CartProviderProps) {
   const [cart, setCart] = useState<Game[]>([])
 
-  useEffect(() => {
+  async function getStorage() {
     const storagedCart = localStorage.getItem('@GamesLair:cart')
 
     if (storagedCart) {
-      setCart(JSON.parse(storagedCart))
+      const parseCart = await JSON.parse(storagedCart)
+      await setCart(parseCart)
+      return
     }
     setCart([])
+  }
+
+  useEffect(() => {
+    getStorage()
   }, [])
+
+  const totalCartItems = cart.reduce((sumTotal, item) => {
+    sumTotal += item.amount
+    return sumTotal
+  }, 0)
 
   async function addProduct(productId: number) {
     try {
@@ -110,7 +122,13 @@ export function CartProvider({ children }: CartProviderProps) {
 
   return (
     <CartContext.Provider
-      value={{ cart, addProduct, removeProduct, updateProductAmount }}
+      value={{
+        cart,
+        totalCartItems,
+        addProduct,
+        removeProduct,
+        updateProductAmount
+      }}
     >
       {children}
     </CartContext.Provider>

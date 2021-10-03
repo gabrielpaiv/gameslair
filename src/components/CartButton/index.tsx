@@ -1,15 +1,18 @@
+/* eslint-disable @next/next/link-passhref */
 import { FaShoppingCart } from 'react-icons/fa'
+import { useCart } from '../../hooks/useCart'
 import styles from './styles.module.scss'
+import Link from 'next/link'
 
-interface CartButtonProps {
-  cartitems: number
-}
+export function CartButton() {
+  const { totalCartItems } = useCart()
 
-export function CartButton({ cartitems }: CartButtonProps) {
   return (
-    <button className={styles.cartButton}>
-      <FaShoppingCart size="2.5rem" color="var(--cyan-500)" />
-      {cartitems > 0 ? <span>{cartitems}</span> : ''}
-    </button>
+    <Link href="/cart">
+      <button className={styles.cartButton}>
+        <FaShoppingCart size="2.5rem" color="var(--cyan-500)" />
+        {totalCartItems > 0 ? <span>{totalCartItems}</span> : ''}
+      </button>
+    </Link>
   )
 }

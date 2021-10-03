@@ -18,7 +18,7 @@ export function Header() {
             <span>GamesLair</span>
           </a>
         </Link>
-        {!isOnCart && <CartButton cartitems={0} />}
+        {!isOnCart && <CartButton />}
       </div>
     </header>
   )
