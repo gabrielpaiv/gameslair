@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { FaCartPlus } from 'react-icons/fa'
+import { Footer } from '../components/Footer'
 import { useCart } from '../hooks/useCart'
 import { api } from '../services/api'
 import { Game } from '../types/game'
@@ -34,12 +35,9 @@ export default function Home() {
   }, [])
 
   async function orderBy(by: string, asc: boolean) {
-    console.log(by, sortedBy, isAsc)
     if (by === sortedBy) {
-      console.log('I will switch isAsc')
       setIsAsc(!isAsc)
     } else {
-      console.log('I will set variables')
       setIsAsc(true)
       setSortedBy(by)
     }
@@ -62,7 +60,7 @@ export default function Home() {
         <title>GamesLair | Seu covil de jogos</title>
       </Head>
 
-      <div className={styles.content}>
+      <main className={styles.content}>
         <table>
           <thead>
             <tr>
@@ -109,10 +107,8 @@ export default function Home() {
             ))}
           </tbody>
         </table>
-      </div>
-      <footer className={styles.footerContainer}>
-        <h4>Made with 🦆 by Gabriel Paiva</h4>
-      </footer>
+      </main>
+      <Footer />
     </>
   )
 }
