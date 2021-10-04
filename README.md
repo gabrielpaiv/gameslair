@@ -46,6 +46,8 @@
 - Sass
 - React Toastify
 - Json-server
+- Jest
+- React Testing Library
 
 &nbsp;
 
