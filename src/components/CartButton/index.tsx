@@ -10,7 +10,11 @@ export function CartButton() {
   return (
     <Link href="/cart">
       <button className={styles.cartButton}>
-        <FaShoppingCart size="2.5rem" color="var(--cyan-500)" />
+        <FaShoppingCart
+          size="2.5rem"
+          color="var(--cyan-500)"
+          aria-label="carticon"
+        />
         {totalCartItems > 0 ? <span>{totalCartItems}</span> : ''}
       </button>
     </Link>

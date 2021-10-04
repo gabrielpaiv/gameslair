@@ -72,6 +72,9 @@ $ yarn server
 # Inicie a aplicação
 $ yarn dev
 
+# Para testar rode o comando:
+$ yarn jest
+
 ```
 
 &nbsp;
