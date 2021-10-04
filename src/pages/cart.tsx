@@ -1,8 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { Footer } from '../components/Footer'
 import { useCart } from '../hooks/useCart'
 import { formatPrice } from '../utils/format'
 import styles from './cart.module.scss'
@@ -101,7 +101,6 @@ export default function Cart() {
           <footer>O frete é grátis para compras acima de R$250,00</footer>
         </div>
       </main>
-      <Footer />
     </>
   )
 }

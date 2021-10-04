@@ -2,7 +2,6 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { FaCartPlus } from 'react-icons/fa'
-import { Footer } from '../components/Footer'
 import { useCart } from '../hooks/useCart'
 import { api } from '../services/api'
 import { Game } from '../types/game'
@@ -108,7 +107,6 @@ export default function Home() {
           </tbody>
         </table>
       </main>
-      <Footer />
     </>
   )
 }
