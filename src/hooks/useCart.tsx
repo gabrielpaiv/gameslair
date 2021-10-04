@@ -13,17 +13,12 @@ interface CartProviderProps {
   children: ReactNode
 }
 
-type UpdateProductAmount = {
-  productId: number
-  amount: number
-}
-
 type CartContextData = {
   cart: Game[]
   totalCartItems: number
   addProduct: (productId: number) => Promise<void>
   removeProduct: (productId: number) => void
-  updateProductAmount: ({ productId, amount }: UpdateProductAmount) => void
+  updateProductAmount: (productId: number, amount: number) => void
 }
 
 const CartContext = createContext<CartContextData>({} as CartContextData)
@@ -96,10 +91,7 @@ export function CartProvider({ children }: CartProviderProps) {
     }
   }
 
-  async function updateProductAmount({
-    productId,
-    amount
-  }: UpdateProductAmount) {
+  async function updateProductAmount(productId: number, amount: number) {
     try {
       if (amount === 0) {
         return

@@ -11,11 +11,11 @@
 ## 🏁 Objetivos
 
 - [x] Os produtos devem ser renderizados dinamicamente através do products.json e das imagens estipuladas.
-- [ ] Os valores exibidos no checkout (frete, subtotal e total) devem ser calculados dinamicamente.
-- [ ] O usuário poderá adicionar e remover produtos do carrinho
+- [x] Os valores exibidos no checkout (frete, subtotal e total) devem ser calculados dinamicamente.
+- [x] O usuário poderá adicionar e remover produtos do carrinho
 - [x] O usuário poderá ordenar os produtos por preço, popularidade (score) e ordem alfabética.
-- [ ] A cada produto adicionado, deve-se somar R$ 10,00 ao frete.
-- [ ] O frete é grátis para compras acima de R$ 250,00.
+- [x] A cada produto adicionado, deve-se somar R$ 10,00 ao frete.
+- [x] O frete é grátis para compras acima de R$ 250,00.
 
 &nbsp;
 

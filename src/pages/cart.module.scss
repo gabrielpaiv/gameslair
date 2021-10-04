@@ -1,0 +1,111 @@
+.content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem;
+  column-gap: 2rem;
+
+  .box {
+    background: var(--white);
+    color: var(--gray-900);
+    padding: 0.5rem;
+    border-radius: 3px;
+    max-height: 450px;
+  }
+  section.box {
+    height: 27rem;
+    display: flex;
+    justify-content: space-between;
+    .list {
+      overflow: auto;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem;
+        h3 {
+          width: 13.5rem;
+        }
+        div {
+          text-align: right;
+        }
+        img {
+          height: 7rem;
+        }
+        .actions {
+          button {
+            min-width: 2rem;
+            height: 2rem;
+            margin: 0.3rem;
+            border: none;
+            border-radius: 5px;
+            background: inherit;
+
+            &:nth-child(1) {
+              background: var(--green-500);
+            }
+            &:nth-child(2) {
+              background: var(--red-500);
+            }
+            &:nth-child(3) {
+              color: var(--red-500);
+              text-decoration: underline;
+              font-size: 0.8rem;
+            }
+            &:disabled {
+              cursor: not-allowed;
+              background: var(--gray-100);
+            }
+          }
+        }
+      }
+      h2 {
+        text-align: center;
+      }
+      a {
+        text-align: center;
+        margin-top: 10rem;
+      }
+    }
+
+    .infos {
+      border-left: 1px solid var(--gray-800);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 13rem;
+      margin: 1rem 1.5rem;
+      padding-left: 1rem;
+      div {
+        h5 {
+          font-size: 1rem;
+        }
+        h4 {
+          font-size: 1.1rem;
+        }
+        h3 {
+          font-size: 1.3rem;
+        }
+      }
+      button {
+        background: var(--green-500);
+        color: var(--white);
+        padding: 0.5rem 0;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+  footer {
+    background: var(--white);
+    color: var(--gray-900);
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 3px;
+  }
+}
