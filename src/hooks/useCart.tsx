@@ -31,7 +31,7 @@ export function CartProvider({ children }: CartProviderProps) {
 
     if (storagedCart) {
       const parseCart = await JSON.parse(storagedCart)
-      await setCart(parseCart)
+      setCart(parseCart)
       return
     }
     setCart([])
