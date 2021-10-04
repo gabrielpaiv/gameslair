@@ -81,7 +81,7 @@ $ yarn jest
 
 ## ⏳ Prazos
 
-- O prazo máximo de entrega do projeto é para o dia 06/1/2021 às 23:59.
+- O prazo máximo de entrega do projeto é para o dia 06/10/2021 às 23:59.
 
 ---
 
