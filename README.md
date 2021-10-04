@@ -2,6 +2,10 @@
 
 &nbsp;
 
+<img src="https://raw.githubusercontent.com/gabrielpaiv/gabrielpaiv/main/.github/images/Projects/GamesLair-home-example.jpg" alt="Home"/>
+
+&nbsp;
+
 ## 🏆 Informações sobre o desafio
 
 - O desafio consiste em construir a interface de um ecommerce de games utilizando ReactJs ou React Native.
@@ -16,6 +20,10 @@
 - [x] O usuário poderá ordenar os produtos por preço, popularidade (score) e ordem alfabética.
 - [x] A cada produto adicionado, deve-se somar R$ 10,00 ao frete.
 - [x] O frete é grátis para compras acima de R$ 250,00.
+
+&nbsp;
+
+<img src="https://raw.githubusercontent.com/gabrielpaiv/gabrielpaiv/main/.github/images/Projects/GamesLair-cart-example.jpg" alt="Cart"/>
 
 &nbsp;
 
