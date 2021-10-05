@@ -98,7 +98,10 @@ export default function Home() {
                   <h3>{product.score}</h3>
                 </td>
                 <td>
-                  <button onClick={() => addProduct(product.id)}>
+                  <button
+                    onClick={() => addProduct(product.id)}
+                    data-testid="add-button"
+                  >
                     <FaCartPlus size={40} color="var(--green-500)" />
                   </button>
                 </td>

@@ -42,18 +42,19 @@ export default function Cart() {
               {cart.length ? (
                 <ul>
                   {cart.map(item => (
-                    <li key={item.id}>
+                    <li key={item.id} data-testid="product">
                       <img src={`/images/${item.image}`} alt={item.name} />
                       <h3>{item.name}</h3>
                       <div>
                         <h3>{formatPrice(item.price * item.amount)}</h3>
-                        <h4>x{item.amount}</h4>
+                        <h4 data-testid="product-amount">x{item.amount}</h4>
                       </div>
                       <div className={styles.actions}>
                         <button
                           onClick={() =>
                             updateProductAmount(item.id, item.amount + 1)
                           }
+                          data-testid="increment-product"
                         >
                           +
                         </button>
@@ -62,10 +63,14 @@ export default function Cart() {
                             updateProductAmount(item.id, item.amount - 1)
                           }
                           disabled={item.amount === 1}
+                          data-testid="decrement-product"
                         >
                           -
                         </button>
-                        <button onClick={() => removeProduct(item.id)}>
+                        <button
+                          onClick={() => removeProduct(item.id)}
+                          data-testid="remove-product"
+                        >
                           Remover
                         </button>
                       </div>
