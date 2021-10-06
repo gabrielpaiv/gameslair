@@ -83,6 +83,21 @@ $ yarn jest
 
 - O prazo máximo de entrega do projeto é para o dia 06/10/2021 às 23:59.
 
+&nbsp;
+
+
+## 🧬 Evolução
+
+- Esse mesmo projeto foi realizado em Julho/2021, no meio desse período muitas coisas aconteceram e eu melhorei. Desde a estrutura dos commits até ao simples esquecer de apagar um console.log ou um código comentado. 
+- No desafio anterior, não existia uma comunicação eficiente entre os componentes e o layout foi feito sem uma responsividade mínima. Desta vez, foi usado um hook para o carrinho de compras e a unidade rem para alterar as proporções em tela (devido ao tempo e a imprevistos, uma responsividade para mobile não foi feita).
+- Eis o último:
+
+<a  href="https://github.com/gabrielpaiv/desafio_supera">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=gabrielpaiv&theme=react&repo=desafio_supera">
+</a>
+
+&nbsp;
+
 ---
 
 <p align="center">Feito com 🦆 por Gabriel Paiva</p>
